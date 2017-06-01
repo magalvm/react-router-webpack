@@ -1,5 +1,5 @@
 
-## Income Server WEB(ReactJS + Redux)
+## React WEB(ReactJS + Redux)
 
 * `npm install`
 * `npm start` - development server
