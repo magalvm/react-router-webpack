@@ -1,0 +1,42 @@
+/*.MainMenu {
+  &.navbar {
+    background-color: #52B285;
+    padding-top: 60px;
+    margin-bottom: 0px;
+    .navbar {
+      &-nav {
+        & > li {
+          &.active {
+            &::after {
+              content: ' ';
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              border-bottom: 5px solid #fff;
+            }
+            & > a {
+              color: #fff;
+              background-color: transparent;
+            }
+          }
+          & > a {
+            font-size: 13.8px;
+            letter-spacing: 0.6px;
+            color: #fff;
+            padding-top: 0;
+            padding-bottom: 7px;
+          }
+        }
+        & > li:hover {
+          &::after {
+            content: ' ';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            border-bottom: 5px solid #fff;
+          }
+        }
+      }
+    }
+  }
+}*/

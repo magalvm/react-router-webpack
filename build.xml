@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="Project" default="compile.Debug.Project">
+	<property name="project.folder" value ="${directory::get-current-directory()}\"/>
+	<property name="build.folder" value="${project.folder}build" /> 
+
+    <target name="build-app">
+        <exec program="npm-install-build.bat" failonerror="true"/>
+		<call target="move-web.config"/>
+    </target>
+
+    <target name="move-web.config">
+		
+		<copy todir="${build.folder}" includeemptydirs="false">
+			<fileset basedir="${project.folder}">
+				<include name="web.config" />
+			</fileset>
+		</copy>
+	</target>
+
+</project>

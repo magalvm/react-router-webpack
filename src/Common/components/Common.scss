@@ -1,0 +1,40 @@
+$radius: 2px;
+
+@mixin buttonDefaults($bgColor) {
+  background-color: $bgColor;
+  color: white;
+  border-radius: $radius;
+  outline: none;
+}
+
+@mixin button($bgColor) {
+  @include buttonDefaults($bgColor);
+  &:hover, &:focus, &:active {
+    @include buttonDefaults($bgColor);
+  }
+}
+
+.title-component {
+  background-color: #f7f9fa;
+
+  .page-title {
+    font-size: 28.3px;
+    line-height: 0.94;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    color: #3c3c3c;
+    border: none;
+    margin: 110px 0px 50px 15px;
+  }
+}
+
+.recent-form-group {
+  .recent-btn {
+    @include button(#0072bc);
+    margin-left: 25px;
+  }
+}
+
+.invite-form {
+  overflow: hidden;
+}
